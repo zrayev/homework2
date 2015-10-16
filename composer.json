@@ -1,0 +1,14 @@
+{
+    "name": "root/homework2.loc",
+    "authors": [
+        {
+            "name": "dmitry",
+            "email": "zrayev@mail.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+	"php": ">=5.5.0",
+        "ext-curl": "*"
+}
+}
