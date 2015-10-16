@@ -9,6 +9,8 @@
     "minimum-stability": "stable",
     "require": {
 	"php": ">=5.5.0",
-        "ext-curl": "*"
+        "ext-curl": "*",
+	"twbs/bootstrap": "3.3.5",
+	"nesbot/carbon": "^1.20"
 }
 }
