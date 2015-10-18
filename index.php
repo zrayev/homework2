@@ -1,14 +1,15 @@
-<form method="post" />
-A <input type="text" name="a" /> <br>
-<select name="task">
+<form method="post" ></form>
+A <input type="text" name="a"  title=""/> <br>
+<select name="task" title="">
     <option value="+">+</option>
     <option value="-">-</option>
     <option value="*">*</option>
     <option value="/">/</option>
 </select> <br>
-B <input type="text" name="b" /> <br>
+B <label>
+    <input type="text" name="b"/>
+</label> <br>
 <input type="submit" name="submit" value="Розрахувати" /> <br>
-</form>
 
 <?php
 if (isset($_POST['submit'])) {
@@ -42,4 +43,3 @@ if (isset($_POST['submit'])) {
     }
 }
     echo 'Результат: '. $result;
-?>
