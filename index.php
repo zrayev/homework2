@@ -17,16 +17,11 @@ if (isset($_POST['submit'])) {
         $result = 'Число А не заповнене';
     } elseif (empty($_POST['b'])) {
         $result = 'Число В не заповнене';
-    }
-    elseif (!preg_match("/^([0-9\-])+$/", $_POST['a'])) {
+    } elseif (!preg_match("/^([0-9\-])+$/", $_POST['a'])) {
         $result = 'Введіть в поле А цифру';
-    }
-    elseif (!preg_match("/^([0-9\-])+$/", $_POST['b'])) {
+    } elseif (!preg_match("/^([0-9\-])+$/", $_POST['b'])) {
         $result = 'Введіть в поле В цифру';
-    }
-
-    else {
-
+    } else {
         $a = $_POST['a'];
         $b = $_POST['b'];
         $task = $_POST['task'];
