@@ -14,6 +14,12 @@
 
 
 <?php
+require 'vendor/autoload.php';
+
+use Carbon\Carbon;
+use AnthonyMartin\GeoLocation\GeoLocation as GeoLocation;
+use \Punic\Territory;
+
 if (isset($_POST['submit'])) {
     if (empty($_POST['a'])) {
         $result = 'Число А не заповнене';
@@ -40,4 +46,20 @@ if (isset($_POST['submit'])) {
     }
 }
 echo 'Результат: ' . $result;
+echo "<br>";
+echo "<br>";
 
+echo "Точна дата:";
+printf("Now: %s", Carbon::now());
+echo "<br>";
+
+echo "Розташування:";
+//punic/punic
+echo Territory::getName('UA', 'ua');
+echo "<br>";
+//GeoLocation
+$location = 'Cherkasy City';
+$response = GeoLocation::getGeocodeFromGoogle($location);
+$latitude = $response->results[0]->geometry->location->lat;
+$longitude = $response->results[0]->geometry->location->lng;
+echo $latitude . ', ' . $longitude;

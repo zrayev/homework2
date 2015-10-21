@@ -1,16 +1,17 @@
 {
-    "name": "root/homework2.loc",
-    "authors": [
-        {
-            "name": "dmitry",
-            "email": "zrayev@mail.ru"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {
-	"php": ">=5.5.0",
-        "ext-curl": "*",
-	"twbs/bootstrap": "3.3.5",
-	"nesbot/carbon": "^1.20"
-}
+  "name": "root/homework2.loc",
+  "authors": [
+    {
+      "name": "dmitry",
+      "email": "zrayev@mail.ru"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.5.0",
+    "ext-curl": "*",
+    "anthonymartin/geo-location": "1.0.0",
+    "nesbot/carbon": "^1.20",
+    "punic/punic": "1.6.3"
+  }
 }

@@ -4,9 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "caf591ad3eb811b7cc58cb6d787659ca",
-    "content-hash": "a3337a7cf978b90139f338110a8bbf2e",
+    "hash": "12a72dfd3975f0aba5ced2f18d3a482a",
+    "content-hash": "02c64476bca0754607f2255105126688",
     "packages": [
+        {
+            "name": "anthonymartin/geo-location",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anthonymartin/GeoLocation.php.git",
+                "reference": "a54a562dfe8ae3eef9a5863552401d26bc80e921"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anthonymartin/GeoLocation.php/zipball/a54a562dfe8ae3eef9a5863552401d26bc80e921",
+                "reference": "a54a562dfe8ae3eef9a5863552401d26bc80e921",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "class",
+            "autoload": {
+                "psr-0": {
+                    "AnthonyMartin": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC 3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Martin",
+                    "email": "anthony@replaycreative.com",
+                    "homepage": "http://replaycreative.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Retrieve bounding coordinates, distances, longitude and latitude with GeoLocation.class.php",
+            "homepage": "https://github.com/anthonymartin/GeoLocation.php",
+            "keywords": [
+                "bounding coordinates",
+                "distances",
+                "geocoding",
+                "geolocation"
+            ],
+            "time": "2013-10-25 21:13:03"
+        },
         {
             "name": "nesbot/carbon",
             "version": "1.20.0",
@@ -53,6 +98,71 @@
                 "time"
             ],
             "time": "2015-06-25 04:19:39"
+        },
+        {
+            "name": "punic/punic",
+            "version": "1.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/punic/punic.git",
+                "reference": "5805b35d6a574f754b49be1f539aaf3ae6484808"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/punic/punic/zipball/5805b35d6a574f754b49be1f539aaf3ae6484808",
+                "reference": "5805b35d6a574f754b49be1f539aaf3ae6484808",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "replace": {
+                "punic/calendar": "*",
+                "punic/common": "*"
+            },
+            "require-dev": {
+                "apigen/apigen": "4.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Punic\\": "code/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michele Locati",
+                    "email": "mlocati@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Remo Laubacher",
+                    "email": "remo.laubacher@gmail.com",
+                    "role": "Collaborator, motivator and perfectionist supporter"
+                }
+            ],
+            "description": "PHP-Unicode CLDR",
+            "homepage": "https://github.com/punic/punic",
+            "keywords": [
+                "calendar",
+                "cldr",
+                "date",
+                "date-time",
+                "i18n",
+                "internationalization",
+                "l10n",
+                "localization",
+                "php",
+                "time",
+                "translate",
+                "translations",
+                "unicode"
+            ],
+            "time": "2015-06-16 13:04:27"
         },
         {
             "name": "symfony/translation",
@@ -114,57 +224,6 @@
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
             "time": "2015-09-06 08:36:38"
-        },
-        {
-            "name": "twbs/bootstrap",
-            "version": "v3.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
-                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
-                "shasum": ""
-            },
-            "replace": {
-                "twitter/bootstrap": "self.version"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                },
-                {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
-                }
-            ],
-            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "homepage": "http://getbootstrap.com",
-            "keywords": [
-                "JS",
-                "css",
-                "framework",
-                "front-end",
-                "less",
-                "mobile-first",
-                "responsive",
-                "web"
-            ],
-            "time": "2015-06-16 16:13:22"
         }
     ],
     "packages-dev": [],
