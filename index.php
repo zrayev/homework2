@@ -45,7 +45,9 @@ if (isset($_POST['submit'])) {
         }
     }
 }
-echo 'Результат: ' . $result;
+if (isset($result)) {
+    echo "Результат: $result";
+}
 echo "<br>";
 echo "<br>";
 
